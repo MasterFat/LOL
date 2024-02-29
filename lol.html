@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <!--標題-->
+            <div class="title">
+                <div class="title-select" style="font-size: 20px; font-style:oblique; font-weight: bold;">選擇</div>             
+                <div class="title-campaign" style="font-size: 70px; font-style: oblique; font-weight: bold;" >英雄</div>          
+                <div class="title-description" style="font-size: small;">共有超過140位英雄，絕對能找到適合你遊玩風格的完美選擇。
+                    <br/>
+                    你可以專攻一位，或是挑戰駕馭所有英雄。
+                </div>
+            </div>
+            <!--分類選擇箱-->
+            <div class="box">
+                <div class="box-inner">
+                    <input type="text" class="box-search" placeholder="搜 尋 英 雄"></input>
+                </div>
+            </div>
+              <!--各角色-->
+            <div class="championscontainer"> 
+                <div class="championscontainer-all"></div> 
+            </div>                      
+        </div>
+    </div>
+
+
+    
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="lol.js">
+    </script> 
+</body>
+</html>
+
+
+
+
+
+
+
+// <!-- <!DOCTYPE html>
+// <html lang="zh-TW">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <title>Document</title>
+//   </head>
+//   <body>
+//     <div>
+//       <div id="champions">
+//         <p>amumu</p>
+//       </div>
+//     </div>
+//     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+//     <script>
+//       axios({
+//         method: "get",
+//         url: "http://ddragon.leagueoflegends.com/cdn/13.19.1/data/en_US/champion.json",
+//       }).then(function (response) {
+//         const champions = response.data.data;
+//         const championsElement = document.getElementById("champions");
+
+//         let htmlString = "";
+//         for (let key in champions) {
+//           console.log(champions[key].name);
+//           htmlString = htmlString + "<p>" + champions[key].name + "</p>";
+//         }
+//         championsElement.innerHTML = htmlString;
+//       });
+//     </script>
+//   </body>
+// </html> -->
+
+// <!-- 
+    
+// 先做 HTML 和 CSS，把畫面先設計好 
+// 利用 axios 請求數據 
+// 把英雄渲染到 html上面
+// 取出英雄的分類
+// 把英雄分類渲染到 html 上面
+// 利用 filter 篩選英雄的分類
+// -->
